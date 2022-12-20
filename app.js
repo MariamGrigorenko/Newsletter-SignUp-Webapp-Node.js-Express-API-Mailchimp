@@ -21,8 +21,8 @@ app.get("/", function (req, res) {
 
 
 mailchimp.setConfig({
-  apiKey: "6fafd03c337748025a8d8d85f9a8506b-us11",
-  server: "us11",
+  apiKey: "{YOUR API KEY}",
+  server: "{YOUR SERVER NUMBER => usxx}",
 });
 
 // *** Signup Route ***
@@ -34,7 +34,7 @@ app.post("/", function (req, res) {
     email: req.body.email,
   };
 
-  const listId = "a58491cbc1";
+  const listId = "{YOUR LIST ID}";
 
   async function run() {
     try {
